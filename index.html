@@ -86,7 +86,7 @@
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
   <h1 class="margin">My name is Ylonka Machado.</h1>
-  <img src="image/me.PNG" class="img-responsive img-circle margin" style="display:inline" alt="Me" width="250" height="250">
+  <img src="image/me.png" class="img-responsive img-circle margin" style="display:inline" alt="Me" width="200" height="200">
   <h3>I am<span id="typed"></span></h3>
 </div>
 
@@ -94,6 +94,28 @@
 <div class="container-fluid bg-2 text-center about-section" id="about">
   <h3 class="margin">WHO AM I?</h3>
   <p>I'm currently a senior at Rensselaer Polytechnic Institute. I will be graduating in December 2017 with a bachelor's in Information Technology & Web Science and a master's in Data Science & Analytics. I was born and raised in the tiny island of Puerto Rico and came to the States for school. While I don't regret it, I would prefer to see the sun more often.</p>
+  <br>
+  <h3>IN CASE YOU WERE WONDERING,</h3>
+<!--Google Map-->
+  <div id="map">
+      <script>
+          function initMap() {
+            var pr = {lat: 18.2208, lng: -66.5901};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 5,
+              center: pr,
+              mapTypeId: 'satellite'
+            });
+            var marker = new google.maps.Marker({
+              position: pr,
+              map: map
+            });
+          }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXyY3d21AIE68tBbkg4AXQYAZqCG0VzoU&callback=initMap"></script>
+    </div>
+  </div>
+</div>
 </div>
 
 <!-- Third Container -->
@@ -103,6 +125,7 @@
     </div>
   </div>
 </div>
+
 
 <!-- Fourth Container -->
 <div class="container-fluid bg-4 text-center" id="work">    
